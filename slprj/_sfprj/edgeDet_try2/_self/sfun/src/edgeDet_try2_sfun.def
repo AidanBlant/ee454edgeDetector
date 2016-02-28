@@ -1,0 +1,3 @@
+LIBRARY edgeDet_try2_sfun.mexw64
+EXPORTS
+mexFunction
