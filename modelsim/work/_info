@@ -1,0 +1,47 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 dC:\Users\aidan\Documents\school\ee454\Labs\lab7
+!i10d 8192
+!i10e 25
+!i10f 100
+vsobel
+Z1 Ih?k?AY[A]m?Uc9BPCnef:3
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+Z3 dC:\Users\aidan\Documents\school\ee454\project
+Z4 w1459445605
+Z5 8C:/Users/aidan/Documents/school/ee454/project/sobel.v
+Z6 FC:/Users/aidan/Documents/school/ee454/project/sobel.v
+L0 1
+Z7 OL;L;10.2;57
+r1
+31
+Z8 !s90 -reportprogress|300|-work|work|-vopt|C:/Users/aidan/Documents/school/ee454/project/sobel.v|
+Z9 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z10 !s110 1459445608
+!i10b 1
+Z11 !s100 km<?zh7]l9P3H2Hb0JRR00
+!s85 0
+Z12 !s108 1459445608.526000
+Z13 !s107 C:/Users/aidan/Documents/school/ee454/project/sobel.v|
+vtb_sob
+R10
+!i10b 1
+Z14 !s100 C^Yn>RGLaGP9J8Jn8NIAb0
+Z15 IVLXH24UEnDZ0Aad8en<Q^3
+R2
+R3
+Z16 w1459443817
+Z17 8C:/Users/aidan/Documents/school/ee454/project/tb_sob.v
+Z18 FC:/Users/aidan/Documents/school/ee454/project/tb_sob.v
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1459445608.688000
+!s107 C:/Users/aidan/Documents/school/ee454/project/tb_sob.v|
+Z19 !s90 -reportprogress|300|-work|work|-vopt|C:/Users/aidan/Documents/school/ee454/project/tb_sob.v|
+R9
