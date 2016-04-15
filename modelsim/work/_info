@@ -3,45 +3,92 @@ K4
 z2
 13
 cModel Technology
-Z0 dC:\Users\aidan\Documents\school\ee454\Labs\lab7
+dC:\Users\aidan\Documents\school\ee454\Labs\lab7
 !i10d 8192
 !i10e 25
 !i10f 100
+vinnerSobel
+Z0 !s110 1459725060
+!i10b 1
+!s100 [;^=QDY;_kkFYU=6[FnKL2
+IL4mhc07Nid?k;iMd<TnAQ3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim
+w1459721214
+8C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/innerSobel.v
+FC:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/innerSobel.v
+L0 1
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1459725060.000000
+!s107 C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/innerSobel.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/innerSobel.v|
+!s101 -O0
+!i113 1
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+ninner@sobel
 vsobel
-Z1 Ih?k?AY[A]m?Uc9BPCnef:3
-Z2 V`JN@9S9cnhjKRR_L]QIcM3
-Z3 dC:\Users\aidan\Documents\school\ee454\project
-Z4 w1459445605
-Z5 8C:/Users/aidan/Documents/school/ee454/project/sobel.v
-Z6 FC:/Users/aidan/Documents/school/ee454/project/sobel.v
-L0 1
-Z7 OL;L;10.2;57
-r1
-31
-Z8 !s90 -reportprogress|300|-work|work|-vopt|C:/Users/aidan/Documents/school/ee454/project/sobel.v|
-Z9 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
-Z10 !s110 1459445608
+Z5 !s110 1459725059
 !i10b 1
-Z11 !s100 km<?zh7]l9P3H2Hb0JRR00
-!s85 0
-Z12 !s108 1459445608.526000
-Z13 !s107 C:/Users/aidan/Documents/school/ee454/project/sobel.v|
-vtb_sob
-R10
-!i10b 1
-Z14 !s100 C^Yn>RGLaGP9J8Jn8NIAb0
-Z15 IVLXH24UEnDZ0Aad8en<Q^3
+!s100 z3h`aWb8X>93A:P85@DTk2
+IUOXH`dd0Xb6`U>S`NzXVP0
+R1
 R2
-R3
-Z16 w1459443817
-Z17 8C:/Users/aidan/Documents/school/ee454/project/tb_sob.v
-Z18 FC:/Users/aidan/Documents/school/ee454/project/tb_sob.v
+w1459725058
+8C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/sobel.v
+FC:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/sobel.v
 L0 1
-R7
+R3
 r1
 !s85 0
 31
-!s108 1459445608.688000
-!s107 C:/Users/aidan/Documents/school/ee454/project/tb_sob.v|
-Z19 !s90 -reportprogress|300|-work|work|-vopt|C:/Users/aidan/Documents/school/ee454/project/tb_sob.v|
-R9
+Z6 !s108 1459725059.000000
+!s107 C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/sobel.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/sobel.v|
+!s101 -O0
+!i113 1
+R4
+vtb_sob
+R5
+!i10b 1
+!s100 AbC`;>_AeZ8PURSlJIR[[3
+I<[>4_]22R?>>H1;:n:7VM0
+R1
+R2
+w1459717870
+8C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/tb_sob.v
+FC:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/tb_sob.v
+L0 1
+R3
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/tb_sob.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/tb_sob.v|
+!s101 -O0
+!i113 1
+R4
+vthreshold
+R0
+!i10b 1
+!s100 c52:YEi?9<IW5i1g1T7Sm0
+I9]LEj[e3YMKZTV>d@TSz[2
+R1
+R2
+w1459718676
+8C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/threshold.v
+FC:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/threshold.v
+L0 2
+R3
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/threshold.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/threshold.v|
+!s101 -O0
+!i113 1
+R4

@@ -1,23 +1,10 @@
 module tb_testing;
 
 parameter clk_cycle=10;
-reg clock;
+reg clk;
 reg [7:0] thresh;
 reg [7:0] pixelIn;
-reg [15:0] theOutput;
-
-
-initial
-begin
-
-clock = 1'b0;
-thresh = 
-
-
-
-end
-
-
+reg [] theOutput;
 
 mySobel #(,) sobel(
 	.clk(clock),
