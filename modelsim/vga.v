@@ -8,7 +8,7 @@ module vga #(parameter WIDTH, parameter DEPTH) (
 	output wire vsync,		//vertical sync out
 	output reg [2:0] red,	//red vga output
 	output reg [2:0] green, //green vga output
-	output reg [1:0] blue	//blue vga output
+	output reg [2:0] blue	//blue vga output
 	);
 
 // video structure constants
