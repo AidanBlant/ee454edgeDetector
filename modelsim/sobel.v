@@ -23,7 +23,7 @@ begin
 	begin		
 		inputImage[i] = pixel;
 		i = i+1;
-		if(i >= WIDTH*HEIGHT)
+		if(i >= WIDTH*DEPTH)
 			enabled = 1'b0;
 	end
 end

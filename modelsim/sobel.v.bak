@@ -10,12 +10,11 @@ reg [WIDTH*DEPTH:0] out;
 reg [7:0] SUM;
 integer X;
 integer Y;
-reg enabled = 1'b1;
-
-reg[7:0] inputImage [WIDTH*DEPTH:0];
 
 assign bmpOutput = out;
 
+reg enabled = 1'b1;
+reg[7:0] inputImage [WIDTH*DEPTH:0];
 integer i = 0;
 
 always@(posedge clk)

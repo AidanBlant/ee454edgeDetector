@@ -14,8 +14,10 @@ mySobel #(9,9) sobel(
 
 );
 
+
+
 vga #(9,9) display(
-	.bmpInput(theOutput),
+	.bmpInput(TEST),
 	.dclk(clk),			
 	.clr(rst),			
 	.hsync(hsyncOut),		
