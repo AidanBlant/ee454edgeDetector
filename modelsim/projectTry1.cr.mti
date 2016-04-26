@@ -1,4 +1,11 @@
-C:/Users/aidan/Documents/school/ee454/project/tb_sob.v {1 {vlog -work work -vopt C:/Users/aidan/Documents/school/ee454/project/tb_sob.v
+C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/modelsim/test.v {1 {vlog -work work -vopt C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/modelsim/test.v
+Model Technology ModelSim SE-64 vlog 10.2 Compiler 2013.02 Feb  2 2013
+-- Compiling module test
+
+Top level modules:
+	test
+
+} {} {}} C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/modelsim/tb_sob.v {1 {vlog -work work -vopt C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/modelsim/tb_sob.v
 Model Technology ModelSim SE-64 vlog 10.2 Compiler 2013.02 Feb  2 2013
 -- Compiling module tb_sob
 
