@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 module vga #(parameter WIDTH, parameter DEPTH) (
-	input [WIDTH*DEPTH:0] bmpInput
+	//input [WIDTH*DEPTH:0] bmpInput,
 	input wire dclk,			//pixel clock: 25MHz
 	input wire clr,			//asynchronous reset
 	output wire hsync,		//horizontal sync out
@@ -13,9 +13,16 @@ module vga #(parameter WIDTH, parameter DEPTH) (
 
 // video structure constants
 parameter hpixels = WIDTH;// horizontal pixels per line
-parameter vlines = DEOTH; // vertical lines per frame
+parameter vlines = DEPTH; // vertical lines per frame
 parameter hpulse = 96; 	// hsync pulse length
 parameter vpulse = 2; 	// vsync pulse length
+
+parameter hbp = 144; 	// end of horizontal back porch
+parameter hfp = 784; 	// beginning of horizontal front porch
+parameter vbp = 31; 		// end of vertical back porch
+parameter vfp = 511; 	// beginning of vertical front porch
+
+reg [WIDTH*DEPTH:0] bmpInput = 81'b0000010000100001000010000100001000010000100001000010000100001000010000010000100001;
 
 
 // registers for storing the horizontal & vertical counters

@@ -12,15 +12,12 @@ mySobel #(9,9) sobel(
 	.inputImage(toInput),
 	.bmpImage(theOutput)
 
-parameter clk_cycle=10;
-reg clk;
-reg reset_n;
-wire theDataout;
+);
 
-always #(clk_cycle/2) clk=~clk;
+
 
 vga #(9,9) display(
-	.bmpInput(theOutput),
+	.bmpInput(TEST),
 	.dclk(clk),			
 	.clr(rst),			
 	.hsync(hsyncOut),		
@@ -29,16 +26,9 @@ vga #(9,9) display(
 	.green(greenOut),
 	.blue(blueOut)	
 	
+	
 );
 
-
-initial
-begin
-	reset_n=1'b0;
-	clk=1'b0;
-	#(clk_cycle*4)
-	reset_n=1'b1;
-end
 
 
 
