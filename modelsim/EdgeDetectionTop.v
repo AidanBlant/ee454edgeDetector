@@ -21,7 +21,7 @@ module sobel #(parameter WIDTH, parameter DEPTH)(
 
 
 module vga #(parameter WIDTH, parameter DEPTH) (
-	//input [WIDTH*DEPTH:0] bmpInput,
+	input [WIDTH*DEPTH:0] bmpInput,
 	input wire dclk,			//pixel clock: 25MHz
 	input wire clr,			//asynchronous reset
 	output wire hsync,		//horizontal sync out
