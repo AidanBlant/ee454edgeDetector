@@ -28,15 +28,16 @@ begin
 	end
 end
 
-reg isEdge;
+reg [DEPTH*WIDTH:0] isEdge;
 task applyThresh;
 	input integer t;
+	input integer q;
 	input [7:0] val;
 	begin
 		if( val > t )
-			isEdge = 1;
+			isEdge[q] = 1;
 		else
-			isEdge = 0;
+			isEdge[q] = 0;
 	end
 endtask
 
@@ -54,8 +55,8 @@ begin
 			else
 				innerSobel(inputImage[Y*WIDTH-WIDTH+X-1],inputImage[Y*WIDTH-WIDTH+X],inputImage[Y*WIDTH-WIDTH+X+1],inputImage[Y*WIDTH+X-1],inputImage[Y*WIDTH+X],inputImage[Y*WIDTH+X+1],inputImage[Y*WIDTH+WIDTH+X-1],inputImage[Y*WIDTH+WIDTH+X],inputImage[Y*WIDTH+WIDTH+X+1], SUM);
 
-			applyThresh(threshold, SUM);
-			out[Y*WIDTH+X] <= isEdge;
+			applyThresh(threshold, Y*WIDTH+X, SUM);
+			out[Y*WIDTH+X] <= isEdge[Y*WIDTH+X];
 		end
 
 	end
