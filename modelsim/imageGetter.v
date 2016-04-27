@@ -1,12 +1,13 @@
-module imageGetter(
+module imageGetter  #(parameter WIDTH, parameter DEPTH)(
 	input clk,
-	input rst_n
+	input rst_n,
+	output [WIDTH*DEPTH*8:0] theDataout
 );
 
-reg [15:0] dataout;
-//assign theDataout = dataout [15:0];
+reg [WIDTH*DEPTH*8:0] dataout;
+assign theDataout = dataout;
 
-reg [15:0] memory [0:15]; 	//memory
+reg [WIDTH*DEPTH*8:0] memory; 	//memory
 integer i;					// 17,462 bytes for example
 
 //$readmemh for hex
@@ -19,27 +20,18 @@ always @(posedge clk, negedge rst_n)
 begin
 if(!rst_n)
 	begin
-		dataout <= 1'b0;
+		dataout <= 'b0;
 		i = 0;
 		mReadFlag <= 1'b0;
 	end
 else
-//	begin
-//		if( mReadFlag == 1'b0 )
-//		begin
-//			$readmemh("LENAG.txt", memory);
-//			mReadFlag <= 1'b1;
-//		end
-//		else
+	begin
+		if( mReadFlag == 1'b0 )
 		begin
-			if( i < 16 )
-			begin
-				//dataout <= memory[i];
-				
-				i <= i + 1;
-			end
+			$readmemh("LENAG.txt", memory);
+			mReadFlag <= 1'b1;
 		end
-//	end
+	end
 end
 
 

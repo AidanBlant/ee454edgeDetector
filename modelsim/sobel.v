@@ -1,7 +1,7 @@
 module sobel #(parameter WIDTH, parameter DEPTH)(
 	input clk,
 	input [7:0] threshold,
-	input [7:0] pixel, 
+	input [WIDTH*DEPTH*8:0] inputImage, 
 	output [WIDTH*DEPTH:0] bmpOutput 
 
 );
@@ -14,19 +14,18 @@ integer Y;
 assign bmpOutput = out;
 
 reg enabled = 1'b1;
-reg[7:0] inputImage [WIDTH*DEPTH:0];
 integer i = 0;
 
-always@(posedge clk)
-begin
-	if(enabled)
-	begin		
-		inputImage[i] = pixel;
-		i = i+1;
-		if(i >= WIDTH*DEPTH)
-			enabled = 1'b0;
-	end
-end
+//always@(posedge clk)
+//begin
+//	if(enabled)
+//	begin		
+//		inputImage[i] = pixel;
+//		i = i+1;
+//		if(i >= WIDTH*DEPTH)
+//			enabled = 1'b0;
+//	end
+//end
 
 reg [DEPTH*WIDTH:0] isEdge;
 task applyThresh;
