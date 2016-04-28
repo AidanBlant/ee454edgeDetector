@@ -1,0 +1,39 @@
+
+*** Running vivado
+    with args -log vga_demo.vds -m64 -mode batch -messageDb vivado.pb -notrace -source vga_demo.tcl
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source vga_demo.tcl -notrace
+Command: synth_design -top vga_demo -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 270.359 ; gain = 92.875
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vga_demo' [C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/snake.v:9]
+	Parameter START bound to: 4'b0001 
+	Parameter PLAYING bound to: 4'b0010 
+	Parameter DEAD bound to: 4'b0100 
+	Parameter WIN bound to: 4'b1000 
+INFO: [Synth 8-638] synthesizing module 'BUF' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:567]
+INFO: [Synth 8-256] done synthesizing module 'BUF' (1#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:567]
+INFO: [Synth 8-638] synthesizing module 'hvsync_generator' [C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/hvsync_generator.v:13]
+INFO: [Synth 8-256] done synthesizing module 'hvsync_generator' (2#1) [C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/hvsync_generator.v:13]
+ERROR: [Synth 8-403] loop limit (65536) exceeded [C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/snake.v:79]
+ERROR: [Synth 8-285] failed synthesizing module 'vga_demo' [C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/snake.v:9]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 672.508 ; gain = 495.023
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+7 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 27 19:51:19 2016...
