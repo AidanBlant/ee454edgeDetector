@@ -1,0 +1,426 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Apr 27 11:53:24 2016
+# Process ID: 3716
+# Log file: C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/pong.runs/synth_1/pong.vds
+# Journal file: C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/pong.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source pong.tcl -notrace
+Command: synth_design -top pong -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 269.984 ; gain = 92.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'pong' [C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/pong.v:4]
+INFO: [Synth 8-638] synthesizing module 'hvsync_generator' [C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/hvsync_generator.v:1]
+INFO: [Synth 8-256] done synthesizing module 'hvsync_generator' (1#1) [C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/hvsync_generator.v:1]
+INFO: [Synth 8-4471] merging register 'VGA_G_reg' into 'VGA_R_reg' [C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/pong.v:28]
+INFO: [Synth 8-4471] merging register 'VGA_B_reg' into 'VGA_R_reg' [C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/pong.v:29]
+INFO: [Synth 8-256] done synthesizing module 'pong' (2#1) [C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/pong.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 304.324 ; gain = 126.824
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 304.324 ; gain = 126.824
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc]
+Finished Parsing XDC File [C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 610.902 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 610.902 ; gain = 433.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 610.902 ; gain = 433.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 7 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+incorrect set of required parameters for "set_property" at line 7 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 156 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+incorrect set of required parameters for "set_property" at line 156 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 161 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+incorrect set of required parameters for "set_property" at line 161 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 166 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+incorrect set of required parameters for "set_property" at line 166 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 171 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+incorrect set of required parameters for "set_property" at line 171 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 172 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+incorrect set of required parameters for "set_property" at line 172 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 610.902 ; gain = 433.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 610.902 ; gain = 433.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pong 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module hvsync_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 610.902 ; gain = 433.402
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 610.902 ; gain = 433.402
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 610.902 ; gain = 433.402
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 610.902 ; gain = 433.402
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 610.902 ; gain = 433.402
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 610.902 ; gain = 433.402
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 7 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+incorrect set of required parameters for "set_property" at line 7 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 156 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+incorrect set of required parameters for "set_property" at line 156 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 161 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+incorrect set of required parameters for "set_property" at line 161 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 166 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+incorrect set of required parameters for "set_property" at line 166 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 171 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+incorrect set of required parameters for "set_property" at line 171 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 172 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+incorrect set of required parameters for "set_property" at line 172 of file C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/pong/Lab2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 610.902 ; gain = 433.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 610.902 ; gain = 433.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 610.902 ; gain = 433.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop syncgen/vga_HSs_reg is being inverted and renamed to syncgen/vga_HSs_reg_inv.
+INFO: [Synth 8-5365] Flop syncgen/vga_VSs_reg is being inverted and renamed to syncgen/vga_VSs_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 610.902 ; gain = 433.402
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 610.902 ; gain = 433.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 610.902 ; gain = 433.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 610.902 ; gain = 433.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 610.902 ; gain = 433.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     3|
+|3     |LUT2 |     8|
+|4     |LUT3 |     4|
+|5     |LUT4 |     7|
+|6     |LUT5 |     3|
+|7     |LUT6 |    11|
+|8     |FDRE |    27|
+|9     |IBUF |     1|
+|10    |OBUF |     5|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------+-----------------+------+
+|      |Instance  |Module           |Cells |
++------+----------+-----------------+------+
+|1     |top       |                 |    70|
+|2     |  syncgen |hvsync_generator |    54|
++------+----------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 610.902 ; gain = 433.402
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 610.902 ; gain = 88.254
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 610.902 ; gain = 433.402
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 610.902 ; gain = 395.211
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 610.902 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 27 11:54:07 2016...

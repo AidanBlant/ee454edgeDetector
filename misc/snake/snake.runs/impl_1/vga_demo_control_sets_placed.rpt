@@ -1,0 +1,81 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Wed Apr 27 16:37:18 2016
+| Host         : LAPTOP-OVUNSOBF running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file vga_demo_control_sets_placed.rpt
+| Design       : vga_demo
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    28 |
+| Minimum Number of register sites lost to control set restrictions |   113 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            4 |
+| No           | No                    | Yes                    |              30 |            8 |
+| No           | Yes                   | No                     |              25 |           14 |
+| Yes          | No                    | No                     |             289 |          121 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             114 |           56 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------+-----------------------------+-------------------+------------------+----------------+
+|    Clock Signal    |        Enable Signal        |  Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------+-----------------------------+-------------------+------------------+----------------+
+|  ClkPort_IBUF_BUFG | snake_direction[3]_i_1_n_0  |                   |                2 |              4 |
+|  ClkPort_IBUF_BUFG | state[3]_i_1_n_0            | speed[24]_i_1_n_0 |                2 |              4 |
+|  ClkPort_IBUF_BUFG | speed[24]_i_1_n_0           |                   |                2 |              5 |
+|  clk               |                             |                   |                4 |              5 |
+|  ClkPort_IBUF_BUFG | x_snake[0][9]_i_1_n_0       | speed[24]_i_1_n_0 |                7 |             10 |
+|  ClkPort_IBUF_BUFG | y_snake[0][9]_i_1_n_0       | speed[24]_i_1_n_0 |                6 |             10 |
+|  clk               | syncgen/CounterY[9]_i_1_n_0 | Sw1_IBUF          |                5 |             10 |
+|  clk               |                             | Sw1_IBUF          |                7 |             11 |
+|  ClkPort_IBUF_BUFG |                             | speed[24]_i_1_n_0 |                7 |             14 |
+|  ClkPort_IBUF_BUFG | b_reg[7]_i_1_n_2            | Sw1_IBUF          |                5 |             17 |
+|  ClkPort_IBUF_BUFG | y_head[9]_i_1_n_0           | speed[24]_i_1_n_0 |               15 |             20 |
+|  ClkPort_IBUF_BUFG | y_snake[10][9]_i_1_n_0      |                   |                9 |             20 |
+|  ClkPort_IBUF_BUFG | y_snake[11][9]_i_1_n_0      |                   |                8 |             20 |
+|  ClkPort_IBUF_BUFG | y_snake[12][9]_i_1_n_0      |                   |               12 |             20 |
+|  ClkPort_IBUF_BUFG | y_snake[13][9]_i_1_n_0      |                   |                7 |             20 |
+|  ClkPort_IBUF_BUFG | y_snake[14][9]_i_1_n_0      |                   |                9 |             20 |
+|  ClkPort_IBUF_BUFG | y_snake[15][9]_i_1_n_0      |                   |                8 |             20 |
+|  ClkPort_IBUF_BUFG | y_snake[1][9]_i_1_n_0       | speed[24]_i_1_n_0 |               11 |             20 |
+|  ClkPort_IBUF_BUFG | y_snake[2][9]_i_1_n_0       |                   |                7 |             20 |
+|  ClkPort_IBUF_BUFG | y_snake[3][9]_i_1_n_0       |                   |                9 |             20 |
+|  ClkPort_IBUF_BUFG | y_snake[4][9]_i_1_n_0       |                   |                8 |             20 |
+|  ClkPort_IBUF_BUFG | y_snake[5][9]_i_1_n_0       |                   |                8 |             20 |
+|  ClkPort_IBUF_BUFG | y_snake[6][9]_i_1_n_0       |                   |                8 |             20 |
+|  ClkPort_IBUF_BUFG | y_snake[7][9]_i_1_n_0       |                   |                8 |             20 |
+|  ClkPort_IBUF_BUFG | y_snake[8][9]_i_1_n_0       |                   |                8 |             20 |
+|  ClkPort_IBUF_BUFG | y_snake[9][9]_i_1_n_0       |                   |                8 |             20 |
+|  ClkPort_IBUF_BUFG | y_fruit[8]_i_1_n_0          | speed[24]_i_1_n_0 |                5 |             23 |
+|  ClkPort_IBUF_BUFG |                             | Sw1_IBUF          |                8 |             30 |
++--------------------+-----------------------------+-------------------+------------------+----------------+
+
+
