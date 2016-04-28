@@ -7,14 +7,13 @@ module imageGetter  #(parameter WIDTH, parameter DEPTH)(
 reg [WIDTH*DEPTH*8:0] dataout;
 assign theDataout = dataout;
 
-reg [WIDTH*DEPTH*8:0] memory; 	//memory
 integer i;					// 17,462 bytes for example
 
 //$readmemh for hex
 
 reg mReadFlag;
 
-initial $readmemh("LENAG.txt",memory);
+initial $readmemh("LENAG.txt",dataOut);
 
 always @(posedge clk, negedge rst_n)
 begin
@@ -28,7 +27,7 @@ else
 	begin
 		if( mReadFlag == 1'b0 )
 		begin
-			$readmemh("LENAG.txt", memory);
+			$readmemh("LENAG.txt", dataOut);
 			mReadFlag <= 1'b1;
 		end
 	end
