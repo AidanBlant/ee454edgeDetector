@@ -1,17 +1,16 @@
 
 
-module EdgeDetectionTop #(parameter WIDTH, parameter DEPTH) (
+module EdgeDetectionTop #(parameter WIDTH = 128, parameter DEPTH = 128) (
 	input clk,
-	input rst_n,
-	input [7:0] threshold
+	input rst_n
 );
 
-reg [WIDTH*DEPTH*8:0] inputImage;
-reg [WIDTH*DEPTH:0] bmpImage;
+wire [WIDTH*DEPTH*8:0] inputImage;
+wire [WIDTH*DEPTH:0] bmpImage;
 reg vga_h_sync, vga_v_sync;
 reg vga_r, vga_r1, vga_r2, vga_g, vga_g1, vga_g2, vga_b, vga_b1, vga_b2;
-	
-
+reg [7:0] thresh = 'b00110011;
+ 
 
 imageGetter #(WIDTH,DEPTH) Image(
 	.clk(clk),
@@ -21,7 +20,7 @@ imageGetter #(WIDTH,DEPTH) Image(
 
 sobel #(WIDTH,DEPTH) Sobel(
 	.clk(clk),
-	.threshold(threshold),
+	.threshold(thresh),
 	.inputImage(inputImage),
 	.bmpOutput(bmpImage)
 	);

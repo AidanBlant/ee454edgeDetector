@@ -1,4 +1,4 @@
-module imageGetter  #(parameter WIDTH, parameter DEPTH)(
+module imageGetter  #(parameter WIDTH = 128, parameter DEPTH = 128) (
 	input clk,
 	input rst_n,
 	output [WIDTH*DEPTH*8:0] theDataout

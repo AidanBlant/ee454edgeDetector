@@ -5,7 +5,7 @@
 //				Yinyi Chen
 //				Emma Smih
 //////////////////////////////////////////////////////////////////////////////////
-module vga #(parameter WIDTH, parameter DEPTH)(
+module vga #(parameter WIDTH = 128, parameter DEPTH = 128)(
 	ClkPort, displayImage, vga_h_sync, vga_v_sync, vga_r, vga_r1, vga_r2, vga_g, vga_g1, vga_g2, vga_b, vga_b1, vga_b2
 );
 	
