@@ -1,15 +1,1 @@
-C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/innerSobel.v {1 {vlog -work work -stats=none C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/innerSobel.v
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module innerSobel
 
-Top level modules:
-	innerSobel
-
-} {} {}} C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/threshold.v {1 {vlog -work work -stats=none C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/threshold.v
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module threshold
-
-Top level modules:
-	threshold
-
-} {} {}}

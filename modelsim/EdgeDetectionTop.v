@@ -13,20 +13,20 @@ reg vga_r, vga_r1, vga_r2, vga_g, vga_g1, vga_g2, vga_b, vga_b1, vga_b2;
 	
 
 
-imageGetter Image #(WIDTH,DEPTH)(
+imageGetter #(WIDTH,DEPTH) Image(
 	.clk(clk),
 	.rst_n(rst_n),
 	.theDataout(inputImage)
 	);
 
-sobel Sobel #(WIDTH,DEPTH)(
+sobel #(WIDTH,DEPTH) Sobel(
 	.clk(clk),
 	.threshold(threshold),
 	.inputImage(inputImage),
 	.bmpOutput(bmpImage)
 	);
 
-vga display #(WIDTH, DEPTH) (
+vga #(WIDTH,DEPTH) display(
 	.ClkPort(clk),
 	.displayImage(bmpImage),
 	.vga_h_sync(vga_h_sync), 
