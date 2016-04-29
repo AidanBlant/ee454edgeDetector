@@ -1,0 +1,145 @@
+
+*** Running vivado
+    with args -log EdgeDetectionTop.vdi -applog -m64 -messageDb vivado.pb -mode batch -source EdgeDetectionTop.tcl -notrace
+
+
+****** Vivado v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source EdgeDetectionTop.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'vga_r[0]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_r[1]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_r2[2]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_g[0]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_g[1]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:161]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_g[2]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:162]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:162]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_b[0]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_b[1]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_b[2]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_h_sync'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_v_sync'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 466.652 ; gain = 259.258
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 467.668 ; gain = 1.016
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: c7a7d481
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: c7a7d481
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 859.082 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: c7a7d481
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 859.082 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: c7a7d481
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 859.082 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 859.082 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: c7a7d481
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 859.082 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: c7a7d481
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 859.082 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+19 Infos, 12 Warnings, 11 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 859.082 ; gain = 392.430
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.runs/impl_1/EdgeDetectionTop_drc_opted.rpt.
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 861.238 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 861.238 ; gain = 0.000
+ERROR: [Place 30-494] The design is empty
+Resolution: Check if opt_design has removed all the leaf cells of your design.  Check whether you have instantiated and connected all of the top level ports.
+Ending Placer Task | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 861.238 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+31 Infos, 12 Warnings, 11 Critical Warnings and 2 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 28 17:30:04 2016...

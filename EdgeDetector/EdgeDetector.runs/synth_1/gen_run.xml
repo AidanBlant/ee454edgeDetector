@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1461879659">
-  <File Type="RDS-PROPCONSTRS" Name="EdgeDetectionTop_drc_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1461889624">
   <File Type="PA-TCL" Name="EdgeDetectionTop.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="EdgeDetectionTop_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="EdgeDetectionTop.vds"/>
   <File Type="RDS-UTIL" Name="EdgeDetectionTop_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="EdgeDetectionTop_utilization_synth.pb"/>
@@ -19,10 +19,10 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/modelsim/imageGetter.v">
+    <File Path="$PSRCDIR/sources_1/imports/modelsim/vga.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../modelsim/imageGetter.v"/>
-        <Attr Name="ImportTime" Val="1461871860"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../modelsim/vga.v"/>
+        <Attr Name="ImportTime" Val="1461873576"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -37,19 +37,20 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/modelsim/vga.v">
+    <File Path="$PSRCDIR/sources_1/imports/modelsim/EdgeDetectionTop.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../modelsim/vga.v"/>
-        <Attr Name="ImportTime" Val="1461873576"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../modelsim/EdgeDetectionTop.v"/>
+        <Attr Name="ImportTime" Val="1461873556"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/modelsim/EdgeDetectionTop.v">
+    <File Path="$PSRCDIR/sources_1/imports/modelsim/imageGetter.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../modelsim/EdgeDetectionTop.v"/>
-        <Attr Name="ImportTime" Val="1461873556"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../modelsim/imageGetter.v"/>
+        <Attr Name="ImportTime" Val="1461871860"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -84,9 +85,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

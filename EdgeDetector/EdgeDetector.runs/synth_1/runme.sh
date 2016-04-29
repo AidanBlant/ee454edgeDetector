@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-# EAStep vivado -log EdgeDetectionTop.vds -m64 -mode batch -messageDb vivado.pb -notrace -source EdgeDetectionTop.tcl
+EAStep vivado -log EdgeDetectionTop.vds -m64 -mode batch -messageDb vivado.pb -notrace -source EdgeDetectionTop.tcl

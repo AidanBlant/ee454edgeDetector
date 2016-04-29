@@ -1,0 +1,469 @@
+
+*** Running vivado
+    with args -log EdgeDetectionTop.vds -m64 -mode batch -messageDb vivado.pb -notrace -source EdgeDetectionTop.tcl
+
+
+****** Vivado v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source EdgeDetectionTop.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+Command: synth_design -top EdgeDetectionTop -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7516 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 279.426 ; gain = 72.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'EdgeDetectionTop' [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/EdgeDetectionTop.v:3]
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sobel' [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/sobel.v:1]
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sobel' (1#1) [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/sobel.v:1]
+INFO: [Synth 8-638] synthesizing module 'vga' [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/vga.v:8]
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter START bound to: 4'b0001 
+	Parameter PLAYING bound to: 4'b0010 
+	Parameter DEAD bound to: 4'b0100 
+	Parameter WIN bound to: 4'b1000 
+INFO: [Synth 8-638] synthesizing module 'BUF' [C:/Xilinx/Vivado/2016.1/scripts/rt/data/unisim_comp.v:567]
+INFO: [Synth 8-256] done synthesizing module 'BUF' (2#1) [C:/Xilinx/Vivado/2016.1/scripts/rt/data/unisim_comp.v:567]
+INFO: [Synth 8-638] synthesizing module 'hvsync_generator' [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/hvsync_generator.v:13]
+INFO: [Synth 8-256] done synthesizing module 'hvsync_generator' (3#1) [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/hvsync_generator.v:13]
+INFO: [Synth 8-4471] merging register 'vga_g_reg[2:0]' into 'vga_r_reg[2:0]' [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/vga.v:21]
+INFO: [Synth 8-4471] merging register 'vga_b_reg[2:0]' into 'vga_r_reg[2:0]' [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/vga.v:22]
+WARNING: [Synth 8-3848] Net reset in module/entity vga does not have driver. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/vga.v:27]
+INFO: [Synth 8-256] done synthesizing module 'vga' (4#1) [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/vga.v:8]
+WARNING: [Synth 8-689] width (1) of port connection 'displayImage' does not match port width (129) of module 'vga' [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/EdgeDetectionTop.v:42]
+WARNING: [Synth 8-3848] Net bmpImage in module/entity EdgeDetectionTop does not have driver. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/EdgeDetectionTop.v:42]
+INFO: [Synth 8-256] done synthesizing module 'EdgeDetectionTop' (5#1) [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/EdgeDetectionTop.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 316.727 ; gain = 110.227
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin syncgen:reset to constant 0 [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/vga.v:67]
+WARNING: [Synth 8-3295] tying undriven pin display:displayImage[0] to constant 0 [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/EdgeDetectionTop.v:40]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 316.727 ; gain = 110.227
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'vga_r[0]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_r[1]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_r2[2]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_g[0]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_g[1]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:161]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_g[2]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:162]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:162]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_b[0]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_b[1]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_b[2]'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_h_sync'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_v_sync'. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/EdgeDetectionTop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/EdgeDetectionTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUF => LUT1: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 620.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "CounterY" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:56 ; elapsed = 00:01:02 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 9     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	              129 Bit    Registers := 1     
+	               17 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 10    
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module EdgeDetectionTop 
+Detailed RTL Component Info : 
++---Registers : 
+	              129 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module sobel 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 9     
++---Registers : 
+	               17 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 10    
+	   2 Input      8 Bit        Muxes := 3     
+Module hvsync_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module vga 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+DSP Debug: swapped A/B pins for adder 000001CF84DED9B0
+DSP Debug: swapped A/B pins for adder 000001CF910633C0
+DSP Debug: swapped A/B pins for adder 000001CF90E55F80
+DSP Debug: swapped A/B pins for adder 000001CF90B57DD0
+INFO: [Synth 8-5546] ROM "display/syncgen/CounterY" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:04 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:58 ; elapsed = 00:01:04 . Memory (MB): peak = 620.395 ; gain = 413.895
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (Y_reg[0]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[1]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[2]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[3]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[4]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[5]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[6]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[7]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[8]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[9]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[10]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[11]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[12]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[13]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[14]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[15]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[16]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[17]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[18]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[19]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[20]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[21]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[22]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[23]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[24]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[25]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[26]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[27]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[28]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[29]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[30]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (Y_reg[31]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (isEdge_reg[16]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (isEdge_reg[15]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (isEdge_reg[14]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (isEdge_reg[13]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (isEdge_reg[12]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (isEdge_reg[11]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (isEdge_reg[10]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (isEdge_reg[9]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (isEdge_reg[8]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (isEdge_reg[7]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (isEdge_reg[6]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (isEdge_reg[5]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (isEdge_reg[4]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (isEdge_reg[3]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (isEdge_reg[2]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (isEdge_reg[1]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (isEdge_reg[0]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (out_reg[16]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (out_reg[15]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (out_reg[14]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (out_reg[13]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (out_reg[12]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (out_reg[11]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (out_reg[10]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (out_reg[9]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (out_reg[8]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (out_reg[7]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (out_reg[6]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (out_reg[5]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (out_reg[4]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (out_reg[3]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (out_reg[2]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (out_reg[1]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (out_reg[0]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[0]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[1]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[2]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[3]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[4]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[5]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[6]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[7]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[8]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[9]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[10]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[11]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[12]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[13]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[14]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[15]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[16]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[17]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[18]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[19]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[20]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[21]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[22]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[23]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[24]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[25]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[26]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/DIV_CLK_reg[27]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/syncgen/CounterX_reg[9]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/syncgen/CounterX_reg[8]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/syncgen/CounterX_reg[7]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/syncgen/CounterX_reg[6]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/syncgen/CounterX_reg[5]) is unused and will be removed from module EdgeDetectionTop.
+WARNING: [Synth 8-3332] Sequential element (display/syncgen/CounterX_reg[4]) is unused and will be removed from module EdgeDetectionTop.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 620.395 ; gain = 413.895
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 620.395 ; gain = 413.895
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:28 ; elapsed = 00:01:34 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:34 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:28 ; elapsed = 00:01:34 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:28 ; elapsed = 00:01:34 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:28 ; elapsed = 00:01:34 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:28 ; elapsed = 00:01:34 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:28 ; elapsed = 00:01:34 . Memory (MB): peak = 620.395 ; gain = 413.895
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 276 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 620.395 ; gain = 110.227
+Synthesis Optimization Complete : Time (s): cpu = 00:01:28 ; elapsed = 00:01:34 . Memory (MB): peak = 620.395 ; gain = 413.895
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 117 Warnings, 11 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 620.395 ; gain = 413.895
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 620.395 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 28 17:28:46 2016...

@@ -5,14 +5,21 @@
 //				Yinyi Chen
 //				Emma Smih
 //////////////////////////////////////////////////////////////////////////////////
-module vga #(parameter WIDTH = 128, parameter DEPTH = 128)(
-	ClkPort, displayImage, vga_h_sync, vga_v_sync, vga_r, vga_r1, vga_r2, vga_g, vga_g1, vga_g2, vga_b, vga_b1, vga_b2
+module vga #(parameter WIDTH = 4, parameter DEPTH = 4)(
+    ClkPort, displayImage, vga_h_sync, vga_v_sync, vga_r_out, vga_g_out, vga_b_out
 );
 	
 input ClkPort;
-output [WIDTH*DEPTH:0] displayImage;
-output vga_h_sync, vga_v_sync, vga_r, vga_r1, vga_r2, vga_g, vga_g1, vga_g2, vga_b, vga_b1, vga_b2;
-reg vga_r, vga_r1, vga_r2, vga_g, vga_g1, vga_g2, vga_b, vga_b1, vga_b2;
+input [WIDTH*DEPTH*8:0] displayImage;
+output vga_h_sync, vga_v_sync; 
+output [2:0] vga_r_out;
+output [2:0] vga_g_out;
+output [2:0] vga_b_out;
+reg [2:0] vga_r, vga_g, vga_b;
+
+assign vga_r_out = vga_r;
+assign vga_g_out = vga_g;
+assign vga_b_out = vga_b;
 	
 //////////////////////////////////////////////////////////////////////////////////////////
 	
@@ -20,7 +27,6 @@ reg vga_r, vga_r1, vga_r2, vga_g, vga_g1, vga_g2, vga_b, vga_b1, vga_b2;
 wire	reset, start, ClkPort, board_clk, clk, button_clk;
 
 BUF BUF1 (board_clk, ClkPort); 	
-BUF BUF2 (reset, Sw1);
 
 
 reg [27:0]	count;
@@ -54,8 +60,42 @@ wire inDisplayArea;
 wire [9:0] CounterX;
 wire [9:0] CounterY;
 
+reg [3:0] state;	
+localparam START = 4'b0001, PLAYING = 4'b0010, DEAD = 4'b0100, WIN = 4'b1000;
+
 
 hvsync_generator syncgen(.clk(clk), .reset(reset),.vga_h_sync(vga_h_sync), .vga_v_sync(vga_v_sync), .inDisplayArea(inDisplayArea), .CounterX(CounterX), .CounterY(CounterY));
+
+
+/////////////////////////////////////////////////////////////////////
+// Some memory reading stuff
+
+//reg [15:0] memory [0:15]; 	//memory
+//integer i;					// 17,462 bytes for example
+//reg mReadFlag;
+
+//initial $readmemh("LENAG.txt",memory);
+//			mReadFlag <= 1'b1;
+				//dataout <= memory[i];
+//				$display($time, " << Starting the Simulation >>");
+//				$display("%d%d%d%d%d%d%d%d",memory[i][7],memory[i][6],memory[i][5],memory[i][4],memory[i][3],memory[i][2],memory[i][1],memory[i][0]);
+
+// Width * Depth = 200 * 200 = 40000
+reg [40000:0] theOutputArray [0:15];
+integer i;
+
+always@(posedge clk)
+begin
+//	for( i = 0; i < 40; i = i + i )	// Can't use for loops
+//	begin
+//		if( i%20 == 0 )
+//			theOutputArray[i] = 1'b1;
+//		else if( i%20 == 1 )
+//			theOutputArray[i] = 1'b1;
+//		else
+//			theOutputArray[i] = 1'b0;
+//	end
+end
 
 /////////////////////////////////////////////////////////////////
 ///////////////		VGA control starts here		/////////////////
@@ -63,21 +103,25 @@ hvsync_generator syncgen(.clk(clk), .reset(reset),.vga_h_sync(vga_h_sync), .vga_
 
 // Edges
 
+//wire R = (CounterX % 10 == 0) || (CounterX % 10 == 1) || (CounterY%10 == 1);
+//wire G = (CounterX % 10 == 0) || (CounterX % 10 == 1) || (CounterY%10 == 5);
+//wire B = (CounterX % 10 == 0) || (CounterX % 10 == 1);
 wire R = displayImage[ CounterY * WIDTH + CounterX ];
 wire G = displayImage[ CounterY * WIDTH + CounterX ];
 wire B = displayImage[ CounterY * WIDTH + CounterX ];
 
+
 always @(posedge clk)
 begin
-	vga_r <= R & inDisplayArea;
-	vga_r1 <= R & inDisplayArea;
-	vga_r2 <= R & inDisplayArea;
-    vga_g <= G & inDisplayArea;
-	vga_g1 <= G & inDisplayArea;
-	vga_g2 <= G & inDisplayArea;
-	vga_b <= B & inDisplayArea;
-	vga_b1 <= B & inDisplayArea;
-	vga_b2 <= B & inDisplayArea;
+	vga_r[0] <= R & inDisplayArea;
+	vga_r[1] <= R & inDisplayArea;
+	vga_r[2] <= R & inDisplayArea;
+    vga_g[0] <= G & inDisplayArea & 1'b0;
+	vga_g[1] <= G & inDisplayArea;
+	vga_g[2] <= G & inDisplayArea;
+	vga_b[0] <= B & inDisplayArea;
+	vga_b[1] <= B & inDisplayArea & 1'b0;
+	vga_b[2] <= B & inDisplayArea;
 end
 
 /////////////////////////////////////////////////////////////////

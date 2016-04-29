@@ -22,8 +22,8 @@ var ISEJScriptLib = RDScrDir + "/ISEWrap.js";
 eval( EAInclude(ISEJScriptLib) );
 
 
-// ISEStep( "vivado",
-//          "-log EdgeDetectionTop.vds -m64 -mode batch -messageDb vivado.pb -notrace -source EdgeDetectionTop.tcl" );
+ISEStep( "vivado",
+         "-log EdgeDetectionTop.vds -m64 -mode batch -messageDb vivado.pb -notrace -source EdgeDetectionTop.tcl" );
 
 
 

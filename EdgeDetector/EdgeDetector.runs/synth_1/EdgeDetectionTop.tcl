@@ -16,9 +16,8 @@ set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
 read_verilog -library xil_defaultlib {
   C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/hvsync_generator.v
-  C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/imageGetter.v
-  C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/sobel.v
   C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/vga.v
+  C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/sobel.v
   C:/Users/Emma/Documents/GitHub/ee454edgeDetector/EdgeDetector/EdgeDetector.srcs/sources_1/imports/modelsim/EdgeDetectionTop.v
 }
 foreach dcp [get_files -quiet -all *.dcp] {

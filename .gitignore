@@ -5,3 +5,7 @@ EE 454_Milestone1.pdf
 /modelsim/ee454Notes
 *.qdb
 modelsim/work/_info
+*.xml
+*.wdf
+*.xml
+*.wpc

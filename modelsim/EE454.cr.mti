@@ -1,1 +1,72 @@
+C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/EdgeDetectionTop.v {1 {vlog -work work -stats=none C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/EdgeDetectionTop.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module EdgeDetectionTop
 
+Top level modules:
+	EdgeDetectionTop
+
+} {} {}} C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/tb_sob.v {2 {vlog -work work -stats=none C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/tb_sob.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module innerSobel
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+** Warning: (vlog-6) -- Waiting for lock by "Emma@EMMASURFACE, pid = 4992
+
+". Lockfile is "C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/work/_lock".
+Top level modules:
+
+	innerSobel
+-- Compiling module tb_sob
+
+Top level modules:
+	tb_sob
+
+} {} {}} C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/sobel.v {1 {vlog -work work -stats=none C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/sobel.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module sobel
+
+Top level modules:
+	sobel
+
+} {} {}} C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/threshold.v {1 {vlog -work work -stats=none C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/threshold.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module threshold
+
+Top level modules:
+	threshold
+
+} {} {}} C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/innerSobel.v {1 {vlog -work work -stats=none C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/hvsync_generator.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module hvsync_generator
+
+Top level modules:
+	hvsync_generator
+
+} {} {}} C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/hvsync_generator.v {1 {vlog -work work -stats=none C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/hvsync_generator.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module hvsync_generator
+
+Top level modules:
+	hvsync_generator
+
+} {} {}} C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/vga.v {1 {vlog -work work -stats=none C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/vga.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module vga
+
+Top level modules:
+	vga
+
+} {} {}} C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/imageGetter.v {1 {vlog -work work -stats=none C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/imageGetter.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module imageGetter
+
+Top level modules:
+	imageGetter
+
+} {} {}} C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/file_readmemh.v {1 {vlog -work work -stats=none C:/Users/Emma/Documents/GitHub/ee454edgeDetector/modelsim/file_readmemh.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module file_readmemh
+
+Top level modules:
+	file_readmemh
+
+} {} {}}
