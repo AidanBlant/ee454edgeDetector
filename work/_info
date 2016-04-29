@@ -7,41 +7,69 @@ Z0 dC:\Users\aidan\Documents\school\ee454\Labs\lab7
 !i10d 8192
 !i10e 25
 !i10f 100
+T_opt
+VzhFC;Va[O?m[32@EFP8?b1
+04 11 4 work imageGetter fast 0
+=1-28c2ddd76f91-5722a333-1aa-1c0
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.2;57
+Z1 dC:\Users\aidan\Documents\school\ee454\Labs\lab7
+!s110 1461887795
 vhvsync_generator
-Z1 !s100 2f:_MTK8G93m5L:Sc_?NX1
-Z2 I5@BX72]<KL`K2zS@50n<X1
-Z3 V`JN@9S9cnhjKRR_L]QIcM3
-Z4 dC:\Users\aidan\Documents\school\ee454\ee454edgeDetector
-Z5 w1461798128
-Z6 8C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/hvsync_generator.v
-Z7 FC:/Users/aidan/Documents/school/ee454/ee454edgeDetector/hvsync_generator.v
+!s100 2f:_MTK8G93m5L:Sc_?NX1
+I5@BX72]<KL`K2zS@50n<X1
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+Z3 dC:\Users\aidan\Documents\school\ee454\ee454edgeDetector
+w1461798128
+8C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/hvsync_generator.v
+FC:/Users/aidan/Documents/school/ee454/ee454edgeDetector/hvsync_generator.v
 L0 13
-Z8 OL;L;10.2;57
+Z4 OL;L;10.2;57
 r1
 31
-Z9 !s90 -reportprogress|300|-work|work|-vopt|C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/hvsync_generator.v|
-Z10 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
-Z11 !s110 1461859499
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/hvsync_generator.v|
+Z5 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z6 !s110 1461891205
+!s108 1461891205.290000
+!s107 C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/hvsync_generator.v|
 !i10b 1
 !s85 0
-Z12 !s108 1461859498.959000
-Z13 !s107 C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/hvsync_generator.v|
-vvga_demo
-R11
-!i10b 1
-Z14 !s100 :1feQC^EACV@88mnGDh4M1
-Z15 I:cKhAlUAjHSDoN>^5B`272
+vimageGetter
+R2
+r1
+!s85 0
+31
+IgE4@UiAILnEPQO=^99cNS1
 R3
+w1461891202
+8C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/imageGetter.v
+FC:/Users/aidan/Documents/school/ee454/ee454edgeDetector/imageGetter.v
+L0 1
 R4
-Z16 w1461859460
-Z17 8C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/snake.v
-Z18 FC:/Users/aidan/Documents/school/ee454/ee454edgeDetector/snake.v
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/imageGetter.v|
+R5
+nimage@getter
+!i10b 1
+!s100 ElH80F93F][<Y1Zb8m:]M0
+!s108 1461891205.539000
+!s107 C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/imageGetter.v|
+vvga_demo
+R6
+!s100 :1feQC^EACV@88mnGDh4M1
+I:cKhAlUAjHSDoN>^5B`272
+R2
+R3
+w1461859460
+8C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/snake.v
+FC:/Users/aidan/Documents/school/ee454/ee454edgeDetector/snake.v
 L0 9
-R8
+R4
 r1
-!s85 0
 31
-!s108 1461859499.154000
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/snake.v|
+R5
+!s108 1461891205.391000
 !s107 C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/snake.v|
-Z19 !s90 -reportprogress|300|-work|work|-vopt|C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/snake.v|
-R10
+!i10b 1
+!s85 0

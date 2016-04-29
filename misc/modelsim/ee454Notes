@@ -1,0 +1,36 @@
+	for (i=0; i < 8731; i=i+1)
+    begin
+    	a = data[i];
+		b = a[15:8];
+		c = a[7:0];
+
+		$write("%d:%-4h ",i,data[i]);
+		$write("%-3d ",b);
+		$display("%-3d",c);
+	end
+
+
+	for ( i = 54; i < 128; i=i+1)
+begin
+	for( j = 0; j < 129; j=j+1 )
+	begin
+		if( j!= 128 )
+		begin
+			a = data[i*129+j];
+			imageOut[imIter] = a[15:8];
+			imageOut[imIter+1] = a[7:0];
+			imIter = imIter + 2;
+		end
+	end
+end
+
+reg [15:0] a;
+reg [7:0] b;
+reg [7:0] c;
+
+
+
+	for( i = 0; i < numRows; i = i + 1 )
+	begin
+		imageOut[ i * 128 : ( i + 1 )  * 128 - 1 ] = data[ 54 + i * 128: 54 + ( (i+1) * 128) - 1 ];
+	end

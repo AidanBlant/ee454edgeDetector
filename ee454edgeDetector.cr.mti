@@ -5,4 +5,11 @@ Model Technology ModelSim SE-64 vlog 10.2 Compiler 2013.02 Feb  2 2013
 Top level modules:
 	hvsync_generator
 
+} {} {}} C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/snake.v {1 {vlog -work work -vopt C:/Users/aidan/Documents/school/ee454/ee454edgeDetector/snake.v
+Model Technology ModelSim SE-64 vlog 10.2 Compiler 2013.02 Feb  2 2013
+-- Compiling module vga_demo
+
+Top level modules:
+	vga_demo
+
 } {} {}}
