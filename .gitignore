@@ -9,3 +9,9 @@ modelsim/work/_info
 *.wdf
 *.xml
 *.wpc
+*.bak
+*.mpf
+*.wlf
+Attempt2/work/_info
+*.qpg
+Attempt2/work/_vmake
