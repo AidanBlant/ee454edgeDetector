@@ -1,0 +1,36 @@
+C:/Users/Emma/Documents/GitHub/ee454edgeDetector/Attempt2/sobel.v {1 {vlog -work work -stats=none C:/Users/Emma/Documents/GitHub/ee454edgeDetector/Attempt2/sobel.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module sobel
+
+Top level modules:
+	sobel
+
+} {} {}} C:/Users/Emma/Documents/GitHub/ee454edgeDetector/Attempt2/hvsync_generator.v {1 {vlog -work work -stats=none C:/Users/Emma/Documents/GitHub/ee454edgeDetector/Attempt2/hvsync_generator.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module hvsync_generator
+
+Top level modules:
+	hvsync_generator
+
+} {} {}} C:/Users/Emma/Documents/GitHub/ee454edgeDetector/Attempt2/innerSobel.v {1 {vlog -work work -stats=none C:/Users/Emma/Documents/GitHub/ee454edgeDetector/Attempt2/innerSobel.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module innerSobel
+
+Top level modules:
+	innerSobel
+
+} {} {}} C:/Users/Emma/Documents/GitHub/ee454edgeDetector/Attempt2/vga.v {1 {vlog -work work -stats=none C:/Users/Emma/Documents/GitHub/ee454edgeDetector/Attempt2/vga.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module vga
+
+Top level modules:
+	vga
+
+} {} {}} C:/Users/Emma/Documents/GitHub/ee454edgeDetector/Attempt2/EdgeDetectionTop.v {1 {vlog -work work -stats=none C:/Users/Emma/Documents/GitHub/ee454edgeDetector/Attempt2/EdgeDetectionTop.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module EdgeDetectionTop
+
+Top level modules:
+	EdgeDetectionTop
+
+} {} {}}
